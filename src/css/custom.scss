@@ -31,7 +31,6 @@ body{
   padding: .75rem 0;
   justify-content: space-between;
   --bs-bg-opacity: 1;
-  //background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 
   .navbar__inner {
     max-width: 1320px;
@@ -50,6 +49,9 @@ body{
     }
   }
 
+  .dropdown__menu > li > a {
+    color: black;
+  }
 }
 
 .button-bordered {

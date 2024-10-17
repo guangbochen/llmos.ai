@@ -7,6 +7,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Typing from "@site/src/components/Typing";
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Translate from '@docusaurus/Translate';
 import "./homePage.scss";
 function HomepageHeader() {
   return (
@@ -15,24 +16,32 @@ function HomepageHeader() {
         <div className="row">
           <div className="col col--6">
             <Heading as="h1" className="hero__title">
-              Open Source, Cloud-Native AI Infrastructure Platform For <Typing/>
+              <Translate
+                id="homepage.title"
+                description="The homepage welcome message">
+                Open Source, Cloud-Native AI Infrastructure Platform For
+              </Translate>
+              {/*Open Source, Cloud-Native AI Infrastructure Platform For */}
+              <Typing/>
             </Heading>
             <div className="hero-subtitle home-subtitle">
               <p className="margin-bottom--md">
+                <Translate id="home.subtitle">
                 Fosters innovation in LLMs and generative AI applications. Built on open-source, cutting-edge technologies like Kubernetes and Ray.io, it is designed to be cloud-agnostic and ML framework agnostic.
+                </Translate>
               </p>
               <div className="flex items-center">
                 <Link
                   className="button button-bordered button-large button-white"
                   to="https://llmos.1block.ai/docs/quickstart"
                 >
-                  Get Started
+                  <Translate id="get-started">Get Started</Translate>
                 </Link>
                 <Link
                   className="button button-bordered button-large margin-left--md"
                   to="/contact-us"
                 >
-                  Book a Demo
+                  <Translate id="book-a-demo">Book a Demo</Translate>
                 </Link>
               </div>
             </div>

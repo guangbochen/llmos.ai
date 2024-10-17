@@ -34,10 +34,10 @@ const TypingEffect = () => {
   }, [currentCharIndex, isDeleting, currentStringIndex, strings]);
 
   return (
-    <div>
+    <span className="padding-left--sm">
       <span id="typing">{strings[currentStringIndex].substring(0, currentCharIndex)}</span>
       <span className="cursor"></span>
-    </div>
+    </span>
   );
 };
 

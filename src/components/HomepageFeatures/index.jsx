@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { CodeBlock } from 'react-code-blocks';
 import useBaseUrl from "@docusaurus/core/lib/client/exports/useBaseUrl";
 import './feature.scss';
+import Translate from '@docusaurus/Translate';
 
 const FeatureList = [
   {
@@ -135,7 +136,9 @@ export default function HomepageFeatures() {
     <section className="features-wrapper text-center">
       <div className="container container-lg">
         <h1 className="text--center margin-vert--md">
+          <Translate id="home.features.title">
           A Full Private Platform. Not Just GPUs
+          </Translate>
         </h1>
         <div className="row">
           {FeatureList.map((props, idx) => (

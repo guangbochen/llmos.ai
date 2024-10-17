@@ -31,7 +31,12 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'cn'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+    },
   },
 
   presets: [
@@ -68,6 +73,10 @@ const config = {
           src: 'img/logo/logo-white.png',
         },
         items: [
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://llmos.1block.ai/docs',
             label: 'Docs',
@@ -154,7 +163,6 @@ const config = {
       'docusaurus-plugin-sass', {}
     ]
   ],
-  scripts: [],
 };
 
 export default config;
