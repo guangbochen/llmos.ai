@@ -14,11 +14,11 @@ function HomepageHeader() {
         <div className="row">
           <div className="col col--6">
             <Heading as="h1" className="hero__title">
-              Open Source, Cloud-Native LLMOps Platform For <Typing/>
+              Open Source, Cloud-Native AI Infrastructure Platform For <Typing/>
             </Heading>
             <div className="hero-subtitle home-subtitle">
               <p className="mb-3">
-                Fosters innovation in LLMs and generative AI applications. Built on top of open-source and cutting-edge technologies such as Kubernetes, Ray.io, vLLM, etc., and designed to be cloud-agnostic and ML framework agnostic.
+                Fosters innovation in LLMs and generative AI applications. Built on open-source, cutting-edge technologies like Kubernetes and Ray.io, it is designed to be cloud-agnostic and ML framework agnostic.
               </p>
               <div className="flex items-center gap-6">
                 <Link

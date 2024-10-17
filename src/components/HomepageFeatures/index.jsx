@@ -14,7 +14,7 @@ const FeatureList = [
         Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.
       </>
     ),
-    code: `## Install the cluster-init node
+    code: `## To bootstrap a new cluster
 curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 
 ## To monitor installation logs, run 
@@ -29,7 +29,7 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
     classVal: "col col-12 mb-3",
     description: (
       <>
-        Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and workloads.
+        Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, notebooks, models, and user workloads.
       </>
     ),
     carousel: {
@@ -55,7 +55,7 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
     Svg: require('@site/static/img/multi-cloud.svg').default,
     description: (
       <>
-        Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework.
+        Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework and accelerators.
       </>
     ),
   },
@@ -102,11 +102,9 @@ function Feature({Svg, title, description, code, carousel, Img, classVal}) {
                 <Carousel activeIndex={index} onSelect={handleSelect} slide={true}>
                   {carousel.items.map((item, idx) => (
                     <Carousel.Item key={idx}>
-                      {/*<CarouselImage text="First slide"/>*/}
                       <img src={useBaseUrl(item.file)} alt={`Slide Img ${idx + 1}`} className="d-block w-100 img-fluid" />
                       <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3></h3>
                       </Carousel.Caption>
                     </Carousel.Item>
                   ))}

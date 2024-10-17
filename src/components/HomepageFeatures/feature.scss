@@ -1,7 +1,12 @@
 .features-wrapper {
   .feature-lead {
     padding: 0 2rem;
-    min-height: 4.5rem;
+  }
+
+  .col-6 {
+    .feature-lead {
+      min-height: 4.5rem;
+    }
   }
 
   code {
