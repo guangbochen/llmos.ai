@@ -31,7 +31,7 @@ Uninstalling LLMOS involves two steps:
 If you manually installed LLMOS, you can uninstall it by running the following script on the target node:
 
 ```shell
-curl -sfL https://raw.githubusercontent.com/llmos-ai/llmos/main/uninstall.sh | sh -
+sudo curl -sfL https://raw.githubusercontent.com/llmos-ai/llmos/main/uninstall.sh | sh -
 ```
 
 Afterward, delete the node from the cluster as described in the previous section. 

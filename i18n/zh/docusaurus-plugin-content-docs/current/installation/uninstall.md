@@ -32,7 +32,7 @@ title: 卸载 LLMOS
 如果您手动安装了 LLMOS，可以通过在目标节点上运行以下脚本进行卸载：
 
 ```shell
-curl -sfL https://raw.githubusercontent.com/llmos-ai/llmos/main/uninstall.sh | sh -
+sudo curl -sfL https://raw.githubusercontent.com/llmos-ai/llmos/main/uninstall.sh | sh -
 ```
 
 然后，按照前一节中的说明从集群中删除节点。

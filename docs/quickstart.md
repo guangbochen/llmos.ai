@@ -14,14 +14,14 @@ Make sure your nodes meet the [requirements](/docs/installation/requirements.md)
 LLMOS can be installed to a bare-metal server or a virtual machine. To bootstrap a **new cluster**, follow the steps below:
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
+sudo curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 ```
 
 To monitor installation logs, run `journalctl -u llmos -f`.
 
 After installation, you may optionally add a worker node to the cluster with the following command:
 ```shell
-curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLMOS_TOKEN=mytoken sh -s -
+sudo curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLMOS_TOKEN=mytoken sh -s -
 ```
 
 ### Config Proxy

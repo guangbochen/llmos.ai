@@ -16,7 +16,7 @@ title: 快速入门
 LLMOS 可以安装在物理服务器或虚拟机上。引导创建一个**新集群**，请按照以下步骤操作：
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
+sudo curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 ```
 
 查看安装日志，运行 `journalctl -u llmos -f`。
@@ -24,7 +24,7 @@ curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 (可选）安装完成后，您也可以通过以下命令将 Worker 节点添加到集群中：
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLMOS_TOKEN=mytoken sh -s -
+sudo curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLMOS_TOKEN=mytoken sh -s -
 ```
 
 ### 配置代理

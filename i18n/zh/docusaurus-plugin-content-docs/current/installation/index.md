@@ -18,7 +18,7 @@ title: 安装指南
 要在物理服务器或虚拟机上创建一个新集群，运行以下命令：
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
+sudo curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 ```
 
 ### 加入集群
@@ -27,12 +27,12 @@ curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 要加入一个节点，您需要 `server-url` 和集群的 `token`。
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | sh -s - --server https://server-url:6443 --token mytoken
+sudo curl -sfL https://get-llmos.1block.ai | sh -s - --server https://server-url:6443 --token mytoken
 ```
 
 :::info
 如果您已经使用 [LLMOS 配置文件](/docs/installation/configurations) 配置了这些选项，只需运行安装脚本：
-`curl -sfL https://get-llmos.1block.ai | sh -`。
+`sudo curl -sfL https://get-llmos.1block.ai | sh -`。
 
 或者如果您已经手动下载了 [LLMOS 二进制文件](https://github.com/llmos-ai/llmos/releases)，可以运行：
 
@@ -74,7 +74,7 @@ export NO_PROXY=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 要将环境变量传递给安装脚本，添加以 `LLMOS_` 为前缀的环境变量，如下所示：
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | LLMOS_DEBUG=true LLMOS_DEBUG_LEVEL=9 sh -s -
+sudo curl -sfL https://get-llmos.1block.ai | LLMOS_DEBUG=true LLMOS_DEBUG_LEVEL=9 sh -s -
 ```
 
 有关 LLMOS 配置选项的更多详细信息，您可以查看 [LLMOS 配置](/docs/installation/configurations) 页面。
@@ -96,5 +96,5 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_DEBUG=true LLMOS_DEBUG_LEVEL=9 sh 
 例如，如果您已经在 `/usr/local/bin/llmos` 安装了 LLMOS 二进制文件，并且想跳过下载步骤，可以设置以下环境变量：
 
 ```shell
-curl -sfL https://get-llmos.1block.ai | INSTALL_LLMOS_SKIP_DOWNLOAD=true sh -s -
+sudo curl -sfL https://get-llmos.1block.ai | INSTALL_LLMOS_SKIP_DOWNLOAD=true sh -s -
 ```
